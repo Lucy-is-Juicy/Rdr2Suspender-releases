@@ -43,13 +43,21 @@ It starts by itself every time you turn the device on.
 
 > **Steam Deck: "I don't have a password!"** Open Konsole, type `passwd`, press Enter, then type a new password twice. Nothing shows while you type, which is normal. Write the password down.
 
-### Steam Deck: use a back button instead of F9
+### Steam Deck: use the back buttons instead of F9
 
-In Gaming Mode, while RDR2 is running: STEAM button → **Controller settings** → **Edit Layout** → **Back Grips** → pick L4, R4, L5 or R5 → set it to **Keyboard → F9**.
+Click the tray icon (Desktop Mode) → **Steam Deck back button** → pick **L4**, **R4**, **L5** or **R5**, or **L4+R4** / **L5+R5** (hold one, press the other, so it never fires by accident). You don't need to change anything in Steam's controller settings, and it works in Gaming Mode.
+
+Any other combination can be set in Konsole, for example:
+
+```sh
+~/.local/bin/session-suspender config button L5+A
+```
+
+Button names: `L4 R4 L5 R5 A B X Y L1 R1 L2 R2 L3 R3 Up Down Left Right View Menu QAM Steam`. Include at least one back button, because the game still reacts to the other buttons.
 
 ### Settings
 
-Click the icon next to the clock (Desktop Mode): **Change hotkey…**, **Duration** (default 8 seconds; try 10 if you land in the same session), **Start at login**, **Language** (English / Russian), **Exit**. Changes also apply in Gaming Mode.
+Click the icon next to the clock (Desktop Mode): **Change hotkey…**, **Steam Deck back button**, **Duration** (default 8 seconds; try 10 if you land in the same session), **Start at login**, **Language** (English / Russian), **Exit**. Changes also apply in Gaming Mode.
 
 ### Problems?
 
